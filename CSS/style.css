@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+}
+
+/* Título */
+h1 {
+    color: #0277bd;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px #01579b;
+}
+
+/* Botones */
+button {
+    background-color: #4fc3f7;
+    border: 2px solid #0277bd;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+/* Olas en los bordes */
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-radial-gradient(circle, #81d4fa, #0277bd 5px, transparent 10px);
+    clip-path: polygon(0 20%, 100% 15%, 100% 85%, 0 80%);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+button:hover::before {
+    opacity: 0.8;
+}
+
+button:hover {
+    background-color: #0277bd;
+}

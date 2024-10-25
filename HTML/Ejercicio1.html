@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventanilla de Banco</title>
+    <link rel="stylesheet" href="/CSS/Ejercicio1.css">
+</head>
+<body>
+    <h1>Ventanilla de Banco</h1>
+    <div>
+        <input type="text" id="nombre" placeholder="Nombre del cliente">
+        <select id="tipoMovimiento">
+            <option value="Depósito">Depósito</option>
+            <option value="Retiro">Retiro</option>
+            <option value="Consulta">Consulta</option>
+        </select>
+        <button onclick="agregarCliente()">Formarse</button>
+        <button onclick="atenderCliente()">Atender en ventanilla</button>
+    </div>
+
+    <h2>Clientes en Cola</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Número de turno</th>
+                <th>Nombre</th>
+                <th>Tipo de Movimiento</th>
+                <th>Hora de Llegada</th>
+            </tr>
+        </thead>
+        <tbody id="tablaClientes"></tbody>
+    </table>
+
+    <h3>Estado de la Cola</h3>
+    <p id="estadoCola">Cola vacía</p>
+
+    <script src="/JS/Ejercicio1.js"></script>
+</body>
+</html>

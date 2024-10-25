@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamiento de Autos</title>
+    <link rel="stylesheet" href="/CSS/Ejercicio3.css">
+</head>
+<body>
+
+    <h1>Estacionamiento de Autos</h1>
+
+    <div>
+        <h2>Entrada de Auto</h2>
+        <label for="placas">Placas:</label>
+        <input type="text" id="placas" placeholder="Ingrese las placas" required><br>
+        <label for="propietario">Propietario:</label>
+        <input type="text" id="propietario" placeholder="Nombre del propietario" required><br>
+        <button onclick="entradaAuto()">Registrar Entrada</button>
+    </div>
+
+    <div>
+        <h2>Salida de Auto</h2>
+        <button onclick="salidaAuto()">Registrar Salida</button>
+    </div>
+
+    <div id="salida">
+        <h3>Información de Salida</h3>
+        <p id="informacionSalida">No hay vehículos en la cola.</p>
+    </div>
+
+    <script src="/JS/Ejercicio3.js"></script>
+</body>
+</html>

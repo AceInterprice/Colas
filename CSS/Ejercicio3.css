@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color: #1d3557;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d3557;
+}
+input, label {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#salida {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1faee;
+    max-width: 400px;
+    text-align: left;
+}
